@@ -1,0 +1,51 @@
+#skill .container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(25rem, 30rem));
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+}
+
+.flutter-skill {
+  background-color: whitesmoke;
+}
+
+.description li {
+  line-height: 2rem;
+}
+
+#skill .container img {
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  align-self: center;
+  /* width: minmax(10rem, 15rem); */
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 50rem) {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+
+  #skill .container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, auto));
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    gap: 1rem;
+  }
+
+  #skill .container img {
+    order: -1;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .description ul {
+    line-height: 1.5rem;
+  }
+}
