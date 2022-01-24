@@ -29,7 +29,7 @@ function Projects() {
   return (
     <section id="portfolio">
       <div className="container">
-        <h1>Projects</h1>
+        <h1>Portfolio</h1>
         <ProjectCard
           title="AddyManager"
           subtitle="A free and open-source Mobile app for AnonAddy.com"
