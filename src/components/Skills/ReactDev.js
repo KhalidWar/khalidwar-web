@@ -1,14 +1,9 @@
 import React from "react";
 import reactDev from "../../assets/react-dev2.png";
 import skillsData from "../../data/skillsData";
-import techBrandLogo from "../../data/TechBrandLogo";
 import "./style.css";
 
 function ReactDev() {
-  const [reactLogo] = techBrandLogo.filter((brand) => {
-    return brand.title === "React";
-  });
-
   const [reactSkill] = skillsData.filter((skill) => {
     return skill.name === "React";
   });
@@ -19,7 +14,7 @@ function ReactDev() {
         {/* Description Grid*/}
         <div className="description">
           {/* Description Header */}
-          <h2>Web dev</h2>
+          <h2>{reactSkill.title}</h2>
 
           {/* Skills list */}
           <ul key={reactSkill.id}>

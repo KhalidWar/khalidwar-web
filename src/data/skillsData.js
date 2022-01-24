@@ -11,67 +11,60 @@ const skillsData = [
   {
     id: 1,
     name: "Flutter",
+    title: "Mobile app development",
     logo: flutterLogo,
     alt: "Flutter logo",
     items: [
       {
         id: 1,
-        label: "Flutter app development",
+        label: "Flutter cross-platform mobile app development.",
       },
       {
         id: 2,
-        label: "Mobile app UI design and UX research",
+        label: "Mobile app UI/UX design and research.",
       },
       {
         id: 3,
-        label: "Transform Figma designs into functioning apps",
+        label: "Manage app lifecycle from Figma sketches to app stores.",
       },
       {
         id: 4,
-        label: "REST API, Firebase, and GraphQL integration among others",
+        label: "REST API, Firebase, and GraphQL integration among others.",
       },
       {
         id: 5,
         label:
-          "Handling complex state and state management solutions such as BloC pattern",
+          "Handling complex state and state management solutions such as BloC pattern.",
       },
       {
         id: 6,
         label:
-          "Proficient in dev tools such as version control (Git) and CI/CD tools",
+          "Proficient in Dart language, dev tools, version control (Git), and CI/CD tools.",
       },
     ],
   },
   {
     id: 2,
     name: "React",
+    title: "Website development",
     logo: reactLogo,
     alt: "React logo",
     items: [
       {
         id: 1,
-        label: "React web development",
+        label: "React website development.",
       },
-
       {
         id: 2,
-        label: "Proficient in HTML, CSS, and JavaScript",
+        label: "Proficient in HTML, CSS, and JavaScript.",
       },
       {
         id: 3,
-        label: "API Integration",
+        label: "Sufficient in utilizing third party packages and dependencies.",
       },
       {
         id: 4,
-        label: "Firebase, Firestore, and GraphQL Integration",
-      },
-      {
-        id: 5,
-        label: "Version Control (Git)",
-      },
-      {
-        id: 6,
-        label: "CI/CD ",
+        label: "Knowledgable in web design and animations.",
       },
     ],
   },

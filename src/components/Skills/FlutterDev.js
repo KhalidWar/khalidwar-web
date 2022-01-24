@@ -1,15 +1,9 @@
 import React from "react";
 import flutterDev from "../../assets/flutter-dev2.png";
 import skillsData from "../../data/skillsData";
-import techBrandLogo from "../../data/TechBrandLogo";
-
 import "./style.css";
 
 function FlutterDev() {
-  const [flutterLogo] = techBrandLogo.filter((brand) => {
-    return brand.title === "Flutter";
-  });
-
   const [flutterSkill] = skillsData.filter((skill) => {
     return skill.name === "Flutter";
   });
@@ -20,7 +14,7 @@ function FlutterDev() {
         {/* Description Grid*/}
         <div className="description">
           {/* Description Header */}
-          <h2>Mobile App dev</h2>
+          <h2>{flutterSkill.title}</h2>
 
           {/* Skills list */}
           <ul key={flutterSkill.id}>
