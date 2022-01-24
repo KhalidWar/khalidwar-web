@@ -110,7 +110,7 @@ function NavBar() {
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  scrollTo("#portfolio-grid");
+                  scrollTo("#portfolio");
                 }}
               >
                 Portfolio

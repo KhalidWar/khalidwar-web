@@ -1,62 +1,24 @@
-* {
-  /* margin: 0;
-  padding: 0; */
-}
-
-.projects {
+#portfolio {
   background-color: whitesmoke;
+}
+
+#portfolio .container {
   display: grid;
-  grid-template-columns: 45vw 30vw;
-  grid-template-rows: 60vh;
-  height: 95vh;
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(25rem, 30rem));
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+#portfolio .container h1 {
+  display: flex;
   justify-content: center;
-  align-content: center;
+  grid-column: span 2;
 }
 
-.project-description {
-  display: flex;
-  flex-direction: column;
-  background-color: lightcyan;
-  justify-content: space-evenly;
-}
-
-.project-image {
-  background-color: lightcyan;
-  display: flex;
-  overflow: hidden;
-}
-
-.title {
-}
-
-.subtitle {
-}
-
-.subtitle span {
-  color: blue;
-  cursor: pointer;
-}
-
-.stats {
-  display: flex;
-  /* align-content: center; */
-}
-
-.built-with {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: flex-start; */
-}
-
-.brand-logo {
-  cursor: pointer;
-  height: 50px;
-}
-
-.app-store-button {
-  cursor: pointer;
-  height: 100%;
-  width: 25%;
-  margin-right: 20px;
+@media (max-width: 50rem) {
+  #portfolio .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
