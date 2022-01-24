@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(25rem, 30rem));
   gap: 1rem;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #portfolio .container h1 {
