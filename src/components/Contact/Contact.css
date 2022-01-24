@@ -5,6 +5,7 @@
 #contact .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(25rem, 30rem));
+  grid-template-rows: 50vh;
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
