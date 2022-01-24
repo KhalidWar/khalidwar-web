@@ -49,7 +49,7 @@ function Landing() {
           <h1>Khalid Warsame</h1>
           <div className="subheader">
             <h3>Software developer.</h3>
-            <p>I build cross-platform mobile apps and responsive websites.</p>
+            <p>I build mobile apps and websites.</p>
           </div>
 
           {/* Social Icons */}
