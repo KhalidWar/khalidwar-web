@@ -73,7 +73,7 @@ function Contact() {
             <h2>Get in touch!</h2>
             <p>Contract me for your projects.</p>
           </div>
-          <div className="contact-card">
+          <div className="contact-form">
             <TextField
               id="outlined-basic"
               variant="outlined"
