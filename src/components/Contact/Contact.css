@@ -15,6 +15,17 @@
   flex-direction: column;
 }
 
+.twitter-icon {
+  cursor: pointer;
+  fill: grey;
+  width: max(1rem, 1.5rem);
+}
+
+#contact p {
+  margin: 0;
+  padding: 0;
+}
+
 .contact-form {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 15rem));
@@ -38,5 +49,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact-us {
+    margin-bottom: 3rem;
+  }
+
+  #contact p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .twitter-icon {
+    align-self: center;
+    margin: 1rem;
   }
 }
