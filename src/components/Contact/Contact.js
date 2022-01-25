@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { TwitterIcon } from "../Landing/components/SocialIcon";
-import { twitterLink } from "../../data/SocialLinks";
+import { LinkedInIcon, TwitterIcon } from "../Landing/components/SocialIcon";
+import { linkedInLink, twitterLink } from "../../data/SocialLinks";
 import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
@@ -74,14 +74,24 @@ function Contact() {
           />
           <p>Have a great idea?</p>
           <h3>Shoot me a message and let's talk!</h3>
-          <TwitterIcon
-            whileHover={{ scale: 1.3 }}
-            whileTap={{ scale: 0.8 }}
-            className="twitter-icon"
-            onClick={() => {
-              window.open(twitterLink, "_blank");
-            }}
-          />
+          <div className="social-icon-container">
+            <LinkedInIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icon"
+              onClick={() => {
+                window.open(linkedInLink, "_blank");
+              }}
+            />
+            <TwitterIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icon"
+              onClick={() => {
+                window.open(twitterLink, "_blank");
+              }}
+            />
+          </div>
         </div>
         <div className="contact-form">
           <TextField

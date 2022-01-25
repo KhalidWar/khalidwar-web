@@ -16,9 +16,10 @@
   flex-direction: column;
 }
 
-.twitter-icon {
+.social-icon {
   cursor: pointer;
   fill: grey;
+  margin-right: 1rem;
   width: max(1rem, 1.5rem);
 }
 
@@ -62,8 +63,7 @@
     padding: 0;
   }
 
-  .twitter-icon {
-    align-self: center;
-    margin: 1rem;
+  .social-icon-container {
+    margin: auto;
   }
 }
