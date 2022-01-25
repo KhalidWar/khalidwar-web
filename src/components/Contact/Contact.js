@@ -99,6 +99,7 @@ function Contact() {
             variant="outlined"
             label="Full Name"
             name="name"
+            type="text"
             required
             error={showError && !formData.name}
             helperText={showError && !formData.name && "Name is required"}
@@ -110,6 +111,7 @@ function Contact() {
             variant="outlined"
             label="Email"
             name="email"
+            type="email"
             required
             error={
               (showError && !formData.email) || (showError && !isEmailValid)
@@ -126,6 +128,7 @@ function Contact() {
             id="outlined-multiline-static"
             label="Message"
             name="message"
+            type="text"
             multiline
             rows={4}
             required
