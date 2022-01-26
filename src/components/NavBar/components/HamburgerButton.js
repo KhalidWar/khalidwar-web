@@ -62,20 +62,29 @@ export default function HamburgerButton(props) {
         }}
       >
         <motion.span
+          style={{
+            backgroundColor: props.layerColor,
+          }}
           className="layer"
           custom={1}
           variants={childrenAnimation}
-        ></motion.span>
+        />
         <motion.span
+          style={{
+            backgroundColor: props.layerColor,
+          }}
           className="layer"
           custom={2}
           variants={childrenAnimation}
-        ></motion.span>
+        />
         <motion.span
+          style={{
+            backgroundColor: props.layerColor,
+          }}
           className="layer"
           custom={3}
           variants={childrenAnimation}
-        ></motion.span>
+        />
       </motion.div>
     </AnimatePresence>
   );

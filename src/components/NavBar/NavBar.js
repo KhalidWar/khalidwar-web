@@ -8,6 +8,10 @@ function NavBar() {
   /// Sets initial navbar menu state for phones
   const initialNavbarState = !(window.innerWidth < 600);
   const [showMenu, setShowMenu] = useState(initialNavbarState);
+  const [navbarColor, setNavbarColor] = useState({
+    backgroundColor: "transparent",
+    textColor: "white",
+  });
 
   const menuAnimation = {
     hidden: { y: -50, opacity: 0 },
@@ -46,6 +50,21 @@ function NavBar() {
     window.innerWidth > 600 ? setShowMenu(true) : setShowMenu(false);
   }
 
+  function handleScroll() {
+    const scrolled =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    scrolled < 100
+      ? setNavbarColor({
+          backgroundColor: "transparent",
+          textColor: "white",
+        })
+      : setNavbarColor({
+          backgroundColor: "whitesmoke",
+          textColor: "black",
+        });
+    console.log(scrolled);
+  }
+
   function scrollTo(selectorId) {
     const anchor = document.querySelector(selectorId);
     anchor.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -55,11 +74,21 @@ function NavBar() {
   useEffect(() => {
     /// Handles conflict between resizing changes and an already set state.
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+    return () => [
+      window.removeEventListener("resize", handleResize),
+      window.removeEventListener("scroll", handleScroll),
+    ];
   }, []);
 
   return (
-    <div className="navbar-container">
+    <div
+      className="navbar-container"
+      style={{
+        backgroundColor: navbarColor.backgroundColor,
+        color: navbarColor.textColor,
+      }}
+    >
       <nav className="navbar">
         {/* Logo */}
         <div
@@ -72,6 +101,7 @@ function NavBar() {
         </div>
 
         <HamburgerButton
+          layerColor={navbarColor.textColor}
           showMenu={showMenu}
           onClick={() => {
             setShowMenu(!showMenu);
