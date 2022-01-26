@@ -1,5 +1,24 @@
-#model-viewer {
-  background-color: rgb(250, 250, 251);
-  width: 100vw;
-  height: 90vh;
+#model {
+  background-color: black;
+  width: 99vw;
+  height: 100vh;
+}
+
+.canvas {
+  /* background-color: lightpink; */
+  display: flex;
+  flex-direction: column;
+}
+
+.bio {
+  color: white;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: center;
+  margin: auto;
+}
+
+@media (max-width: 50rem) {
 }
