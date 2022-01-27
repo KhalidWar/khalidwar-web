@@ -2,13 +2,13 @@ import React from "react";
 import ReactDev from "./ReactDev";
 import FlutterDev from "./FlutterDev";
 
-function Skills() {
+function Experience() {
   return (
-    <div id="skills">
+    <div id="experience">
       <FlutterDev />
       <ReactDev />
     </div>
   );
 }
 
-export default Skills;
+export default Experience;

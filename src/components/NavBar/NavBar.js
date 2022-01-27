@@ -130,7 +130,7 @@ function NavBar() {
                 }}
               >
                 About
-              </motion.li>{" "}
+              </motion.li>
               <motion.li
                 key={1}
                 variants={menuItemAnimation}
@@ -140,10 +140,10 @@ function NavBar() {
                   cursor: "pointer",
                 }}
                 onClick={() => {
-                  scrollTo("#skills");
+                  scrollTo("#experience");
                 }}
               >
-                Skills
+                Experience
               </motion.li>
               <motion.li
                 key={2}
