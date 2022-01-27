@@ -15,8 +15,7 @@ const techBrandLogo = [
     id: 2,
     title: "Dart",
     link: "https://dart.dev",
-    intro:
-      '"Dart is an object-oriented language with C-style syntax". It\'s used to build Flutter apps.',
+    intro: "Dart is an object-oriented language used to build Flutter apps.",
     role: "img",
     viewBox: "0 0 24 24",
     xmlns: "http://www.w3.org/2000/svg",
