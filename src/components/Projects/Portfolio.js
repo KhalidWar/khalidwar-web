@@ -8,13 +8,13 @@ import {
   DartLogo,
   GithubLogo,
 } from "../../SharedComponents/BrandLogo";
-import "./Projects.css";
+import "./Portfolio.css";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
 
 import flutterDev from "../../assets/flutter-dev2.png";
 import reactDev from "../../assets/react-dev2.png";
 
-function Projects() {
+function Portfolio() {
   const anonAddyGithubUrl = "https://github.com/khalidwar/anonaddy";
   const khalidWarGithubUrl = "https://github.com/khalidwar/khalidwar-web";
   const appStoreUrl =
@@ -75,4 +75,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Portfolio;
