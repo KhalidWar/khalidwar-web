@@ -1,26 +1,13 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import AppleRating from "./components/AppStoreRatings/AppleRatings";
-import AppStoreButton from "./components/AppStoreButton/AppStoreButton";
-import GoogleRating from "./components/AppStoreRatings/GoogleRating";
-import {
-  FlutterLogo,
-  DartLogo,
-  GithubLogo,
-} from "../../SharedComponents/BrandLogo";
-import "./Portfolio.css";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
-
 import flutterDev from "../../assets/flutter-dev2.png";
 import reactDev from "../../assets/react-dev2.png";
+
+import "./Portfolio.css";
 
 function Portfolio() {
   const anonAddyGithubUrl = "https://github.com/khalidwar/anonaddy";
   const khalidWarGithubUrl = "https://github.com/khalidwar/khalidwar-web";
-  const appStoreUrl =
-    "https://apps.apple.com/us/app/addymanager/id1547461270#?platform=iphone";
-  const playStoreUrl =
-    "https://play.google.com/store/apps/details?id=com.khalidwar.anonaddy";
 
   function openUrl(url) {
     window.open(url, "_blank");
