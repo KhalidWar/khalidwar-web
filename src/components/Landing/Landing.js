@@ -4,7 +4,7 @@ import { twitterLink, linkedInLink, githubLink } from "../../data/SocialLinks";
 import { LinkedInIcon, GithubIcon, TwitterIcon } from "./components/SocialIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
-import Model from "./components/Model";
+import ProfilePic from "../../assets/profile-pic.jpg";
 
 function Landing() {
   const [tip, setTip] = useState("");
@@ -139,7 +139,7 @@ function Landing() {
         </div>
 
         {/* Profile Picture */}
-        <Model />
+        <img src={ProfilePic} alt="profile-pic" />
       </div>
     </section>
   );

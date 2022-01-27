@@ -1,24 +1,23 @@
 #landing {
-  background-color: lightgreen;
+  background-color: whitesmoke;
 }
 
 #landing .container {
   height: 85vh;
   display: grid;
-  grid-template-columns: 45vw 30vw;
-  justify-content: center;
+  grid-template-columns: repeat(2, minmax(30rem, 25rem));
+  justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
 }
 
 .intro-grid {
-  background-color: lightpink;
+  /* background-color: lightpink; */
   display: flex;
   flex-direction: column;
 }
 
 .intro-grid h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .subheader {
@@ -26,31 +25,34 @@
   margin: 0;
 }
 
-.picture-grid {
+#landing img {
   display: flex;
-  background-color: lightyellow;
-  width: minmax(20%, 25%);
+  /* background-color: lightyellow; */
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid;
+  border-radius: 1rem;
 }
 
 .social-icons-container {
-  background-color: lightsalmon;
+  /* background-color: lightsalmon; */
   margin-block: 2rem;
 }
 
 .social-icons {
   cursor: pointer;
   margin-right: 1rem;
-  width: max(1.5rem, 3rem);
+  width: max(1rem, 2rem);
 }
 
 .tech-logo-container {
-  background-color: lightgray;
+  /* background-color: lightgray; */
 }
 
 .tech-logo {
   cursor: pointer;
   margin-right: 1rem;
-  width: max(1.5rem, 3rem);
+  width: max(1rem, 2rem);
 }
 
 .tip {
@@ -60,26 +62,41 @@
   padding: 5px;
 }
 
-/* @media (max-width: 100px) {
-  .landing-grid {
-    height: 90vh;
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: 45vh 45vh;
-    justify-content: center;
-    align-content: center;
-    gap: 10px;
-  }
-  .intro-grid {
-    order: 1;
-    justify-content: center;
-    align-items: center;
-  }
-} */
-
 @media (max-width: 50rem) {
   #landing .container {
-    height: 95vh;
+    /* height: 90vh; */
+    display: grid;
+    /* grid-template-columns: 90vh;
+    grid-template-rows: repeat(2, minmax(auto, auto)); */
+    grid-template-columns: repeat(1, minmax(auto, auto));
+  }
+
+  #landing img {
+    order: -1;
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .intro-grid {
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+  }
+
+  .social-icons-container {
+    margin-block: 0;
+  }
+
+  .social-icons {
+    cursor: pointer;
+    margin-right: 0.5rem;
+    width: max(1rem, 2rem);
+  }
+
+  .tech-logo {
+    cursor: pointer;
+    margin-right: 1rem;
+    width: max(1rem, 2rem);
   }
 
   #landing p {
@@ -88,30 +105,5 @@
 
   .tip-container {
     display: none;
-  }
-
-  #landing img {
-    display: none;
-  }
-
-  .intro-grid {
-    height: 100%;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-  }
-
-  .profile-grid {
-    display: none;
-  }
-
-  #landing .container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
   }
 }
