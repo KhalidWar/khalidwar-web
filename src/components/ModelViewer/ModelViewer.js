@@ -88,7 +88,7 @@ export default function ModelViewer() {
         <IconButton
           color="inherit"
           onClick={() => {
-            const anchor = document.querySelector("#landing");
+            const anchor = document.querySelector("#about");
             anchor.scrollIntoView({ behavior: "smooth", block: "center" });
           }}
         >
