@@ -40,7 +40,12 @@ export default function ProjectCard({
 
       {/* Card Actions */}
       <CardActions>
-        <Button variant="contained" fullWidth onClick={buttonOnClick}>
+        <Button
+          variant="contained"
+          color="error"
+          fullWidth
+          onClick={buttonOnClick}
+        >
           Learn More
         </Button>
       </CardActions>
