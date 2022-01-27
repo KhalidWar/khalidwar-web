@@ -13,9 +13,9 @@ import ModelViewer from "./components/ModelViewer/ModelViewer";
 function App() {
   return (
     <div>
-      {/* <Suspense fallback={null}>
+      <Suspense fallback={null}>
         <ModelViewer />
-      </Suspense> */}
+      </Suspense>
       <NavBar />
       <About />
       <Experience />

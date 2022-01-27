@@ -94,7 +94,7 @@ function NavBar() {
         <div
           className="navbar-logo"
           onClick={() => {
-            scrollTo("#landing");
+            scrollTo("#model");
           }}
         >
           KhalidWar
