@@ -81,13 +81,13 @@ function Landing() {
           </div>
 
           {/* Tech used */}
-          <h3>Experienced in</h3>
           <motion.div
             className="tech-logo-container"
             variants={brandAnimation}
             initial="hidden"
             animate="visible"
           >
+            <h3>Experienced in</h3>
             {techBrandLogo.map((brand, index) => {
               return (
                 <motion.svg
