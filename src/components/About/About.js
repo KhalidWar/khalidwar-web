@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import "../Landing/Landing.css";
 import { twitterLink, linkedInLink, githubLink } from "../../data/SocialLinks";
 import { LinkedInIcon, GithubIcon, TwitterIcon } from "./components/SocialIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
 import ProfilePic from "../../assets/profile-pic.jpg";
 
-function Landing() {
+import "./About.css";
+
+function About() {
   const [tip, setTip] = useState("");
 
   const brandAnimation = {
@@ -42,7 +43,7 @@ function Landing() {
   }
 
   return (
-    <section id="landing">
+    <section id="about">
       <div className="container">
         {/* Intro */}
         <div className="intro-grid">
@@ -145,4 +146,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default About;

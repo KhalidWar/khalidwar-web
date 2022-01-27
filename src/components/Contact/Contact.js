@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LinkedInIcon, TwitterIcon } from "../Landing/components/SocialIcon";
+import { LinkedInIcon, TwitterIcon } from "../About/components/SocialIcon";
 import { linkedInLink, twitterLink } from "../../data/SocialLinks";
 import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";

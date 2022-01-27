@@ -1,8 +1,8 @@
-#landing {
+#about {
   background-color: whitesmoke;
 }
 
-#landing .container {
+#about .container {
   height: 85vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 25rem));
@@ -25,7 +25,7 @@ p {
   margin: 0;
 }
 
-#landing img {
+#about img {
   display: flex;
   width: 100%;
   overflow: hidden;
@@ -67,7 +67,7 @@ p {
 }
 
 @media (max-width: 50rem) {
-  #landing .container {
+  #about .container {
     /* height: 90vh; */
     display: grid;
     /* grid-template-columns: 90vh;
@@ -75,7 +75,7 @@ p {
     grid-template-columns: repeat(1, minmax(auto, auto));
   }
 
-  #landing img {
+  #about img {
     order: -1;
     width: 70%;
     margin-inline: auto;
@@ -103,7 +103,7 @@ p {
     width: max(1rem, 2rem);
   }
 
-  #landing p {
+  #about p {
     text-align: center;
   }
 

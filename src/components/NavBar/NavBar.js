@@ -126,6 +126,20 @@ function NavBar() {
                   cursor: "pointer",
                 }}
                 onClick={() => {
+                  scrollTo("#about");
+                }}
+              >
+                About
+              </motion.li>{" "}
+              <motion.li
+                key={1}
+                variants={menuItemAnimation}
+                whileHover={{
+                  scale: 1.1,
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                }}
+                onClick={() => {
                   scrollTo("#skills");
                 }}
               >
