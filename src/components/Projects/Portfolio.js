@@ -48,8 +48,8 @@ function Portfolio() {
               <li>Built with HTML, CSS, Javascript, and React library.</li>
               <li>Responsive UI for all screens.</li>
               <li>Use of several react hooks to manage state.</li>
+              <li>Integrated 3D models using ThreeJS library.</li>
               <li>Animated using Framer Motion library.</li>
-              <li>CI/CD developed and deployed.</li>
               <br />
             </ul>
           }
