@@ -9,7 +9,7 @@ function ReactDev() {
   });
 
   return (
-    <section id="skill" className="react-skill">
+    <section id="skill">
       <div className="container">
         {/* Description Grid*/}
         <div className="description">

@@ -9,7 +9,7 @@ function FlutterDev() {
   });
 
   return (
-    <section id="skill" className="flutter-skill">
+    <section id="skill">
       <div className="container">
         {/* Description Grid*/}
         <div className="description">
