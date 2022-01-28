@@ -1,21 +1,17 @@
-import { Suspense } from "react";
-
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Portfolio from "./components/Projects/Portfolio";
 import Contact from "./components/Contact/Contact";
+import ModelViewer from "./components/ModelViewer/ModelViewer";
 
 import "./App.css";
-import ModelViewer from "./components/ModelViewer/ModelViewer";
 
 function App() {
   return (
     <div>
-      <Suspense fallback={null}>
-        <ModelViewer />
-      </Suspense>
+      <ModelViewer />
       <NavBar />
       <About />
       <Experience />

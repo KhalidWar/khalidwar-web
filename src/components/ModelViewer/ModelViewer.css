@@ -5,12 +5,11 @@
 }
 
 .canvas {
-  /* background-color: lightpink; */
   display: flex;
   flex-direction: column;
 }
 
-.bio {
+.icon {
   color: white;
   display: flex;
   position: absolute;
@@ -20,5 +19,9 @@
   margin: auto;
 }
 
-@media (max-width: 50rem) {
+.loading-indicator {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 20%;
 }
