@@ -51,9 +51,9 @@ function NavBar() {
   }
 
   function handleScroll() {
-    const scrolled =
+    const scrollLocation =
       document.body.scrollTop || document.documentElement.scrollTop;
-    scrolled < 100
+    scrollLocation < 100
       ? setNavbarColor({
           backgroundColor: "transparent",
           textColor: "white",
@@ -62,6 +62,17 @@ function NavBar() {
           backgroundColor: "whitesmoke",
           textColor: "black",
         });
+  }
+
+  function hamburgerOnPress() {
+    setShowMenu(!showMenu);
+    const scrollLocation =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    scrollLocation < 100 &&
+      setNavbarColor({
+        backgroundColor: !showMenu ? "whitesmoke" : "transparent",
+        textColor: !showMenu ? "black" : "white",
+      });
   }
 
   function scrollTo(selectorId) {
@@ -102,9 +113,7 @@ function NavBar() {
         <HamburgerButton
           layerColor={navbarColor.textColor}
           showMenu={showMenu}
-          onClick={() => {
-            setShowMenu(!showMenu);
-          }}
+          onClick={hamburgerOnPress}
         />
 
         <AnimatePresence>
