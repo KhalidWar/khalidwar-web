@@ -35,7 +35,7 @@ export default function ProjectCard({
         <hr />
 
         {/* Bullet list and its items */}
-        <Typography>{listItems}</Typography>
+        {listItems}
       </CardContent>
 
       {/* Card Actions */}
