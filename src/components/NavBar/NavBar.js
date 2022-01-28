@@ -23,15 +23,6 @@ function NavBar() {
         staggerChildren: 0.1,
       },
     },
-    exit: {
-      y: -50,
-      opacity: 0,
-      transition: {
-        when: "afterChildren",
-        staggerChildren: 0.1,
-        staggerDirection: -1,
-      },
-    },
   };
 
   const menuItemAnimation = {
@@ -39,10 +30,6 @@ function NavBar() {
     visible: {
       x: "0vh",
       opacity: 1,
-    },
-    exit: {
-      x: "-3vh",
-      opacity: 0,
     },
   };
 
@@ -123,7 +110,6 @@ function NavBar() {
               variants={menuAnimation}
               initial="hidden"
               animate="visible"
-              exit="exit"
             >
               <motion.li
                 key={1}
