@@ -11,8 +11,8 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <ModelViewer />
       <NavBar />
+      <ModelViewer />
       <About />
       <Experience />
       <Portfolio />
