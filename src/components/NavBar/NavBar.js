@@ -132,7 +132,7 @@ function NavBar() {
                 About
               </motion.li>
               <motion.li
-                key={1}
+                key={2}
                 variants={menuItemAnimation}
                 whileHover={{
                   scale: 1.1,
@@ -146,7 +146,7 @@ function NavBar() {
                 Experience
               </motion.li>
               <motion.li
-                key={2}
+                key={3}
                 variants={menuItemAnimation}
                 whileHover={{
                   scale: 1.1,
@@ -160,7 +160,7 @@ function NavBar() {
                 Portfolio
               </motion.li>
               <motion.li
-                key={3}
+                key={4}
                 variants={menuItemAnimation}
                 whileHover={{
                   scale: 1.1,
