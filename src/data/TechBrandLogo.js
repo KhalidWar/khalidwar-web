@@ -27,7 +27,7 @@ const techBrandLogo = [
     title: "React",
     link: "https://reactjs.org/",
     intro:
-      "React, the most popular front-end JavaScript library for web development.",
+      "React is the most popular front-end JavaScript library for web development.",
     role: "img",
     viewBox: "0 0 24 24",
     xmlns: "http://www.w3.org/2000/svg",
