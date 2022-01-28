@@ -6,17 +6,25 @@
 
 .canvas {
   display: flex;
+}
+
+.controls {
+  background-color: rgb(24, 23, 23);
+  color: white;
+  position: absolute;
+  display: flex;
   flex-direction: column;
+  bottom: 0;
+  right: 0;
+  padding-right: 1rem;
+  border-radius: 1rem;
 }
 
 .icon {
   color: white;
-  display: flex;
   position: absolute;
-  width: 100%;
   bottom: 0;
-  justify-content: center;
-  margin: auto;
+  left: 45%;
 }
 
 .loading-indicator {
