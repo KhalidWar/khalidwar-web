@@ -1,7 +1,6 @@
 {
   "name": "khalidwar-web",
   "version": "1.0.0",
-  "homepage": "https://khalidwar.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
