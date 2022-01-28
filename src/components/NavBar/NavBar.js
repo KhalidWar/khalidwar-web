@@ -62,7 +62,6 @@ function NavBar() {
           backgroundColor: "whitesmoke",
           textColor: "black",
         });
-    console.log(scrolled);
   }
 
   function scrollTo(selectorId) {
@@ -120,11 +119,6 @@ function NavBar() {
               <motion.li
                 key={1}
                 variants={menuItemAnimation}
-                whileHover={{
-                  scale: 1.1,
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                }}
                 onClick={() => {
                   scrollTo("#about");
                 }}
@@ -134,11 +128,6 @@ function NavBar() {
               <motion.li
                 key={2}
                 variants={menuItemAnimation}
-                whileHover={{
-                  scale: 1.1,
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                }}
                 onClick={() => {
                   scrollTo("#experience");
                 }}
@@ -148,11 +137,6 @@ function NavBar() {
               <motion.li
                 key={3}
                 variants={menuItemAnimation}
-                whileHover={{
-                  scale: 1.1,
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                }}
                 onClick={() => {
                   scrollTo("#portfolio");
                 }}
@@ -162,11 +146,6 @@ function NavBar() {
               <motion.li
                 key={4}
                 variants={menuItemAnimation}
-                whileHover={{
-                  scale: 1.1,
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                }}
                 onClick={() => {
                   scrollTo("#contact");
                 }}
