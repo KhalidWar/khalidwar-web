@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./HamburgerButton.css";
 
 export default function HamburgerButton(props) {
@@ -45,8 +45,6 @@ export default function HamburgerButton(props) {
           }
         : { x: 0, y: 0, opacity: 1 },
   };
-
-  //   useEffect(() => {}, [props.showMenu]);
 
   return (
     <AnimatePresence>

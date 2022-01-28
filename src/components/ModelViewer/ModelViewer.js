@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, Suspense } from "react";
+import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
@@ -11,12 +11,6 @@ import "./ModelViewer.css";
 
 export default function ModelViewer() {
   const earthGltf = useLoader(GLTFLoader, "/GltfModel/scene.gltf");
-  // const { actions } = useAnimations(earthGltf.animations);
-  // const depthBuffer = useDepthBuffer({ size: 1200 });
-
-  // useEffect(() => {
-  //   actions.earthGltf.play();
-  // });
 
   return (
     <div id="model">
@@ -51,18 +45,10 @@ export default function ModelViewer() {
           position={[2, 0, 0]}
           color="#ff005b"
         />
-        {/* <spotLight position={[0, 0, 2]} distance={3} color="yellow" />
-        <spotLight position={[0, 0, -2]} distance={3} color="blue" />
-        <spotLight position={[-2, 0, 0]} distance={3} color="#0EEC82" />
-        <spotLight position={[2, 0, 0]} distance={3} color="#ff005b" /> */}
         <OrbitControls
           enablePan={false}
           zoomSpeed={0.8}
           rotateSpeed={0.8}
-          // dispatchEvent={(e) => {
-          //   console.log(e);
-          //   console.log("Chagend!");
-          // }}
           minDistance={0.234}
           maxDistance={4}
           autoRotate={true}
