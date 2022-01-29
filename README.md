@@ -1,8 +1,27 @@
-# Getting Started with Create React App
+# Khalidwar.com - personal portfolio website
+
+Personal website to showcase my skills and experiences.
+
+## Check it out
+
+[khalidwar.com](https://khalidwar.com).
+
+## Development Stack
+
+This project is built with the basics of [HTML](https://www.w3schools.com/html/), [CSS](https://www.w3schools.com/Css/), [JavaScript](https://www.javascript.com/), and [React library](https://reactjs.org/).
+
+## Features
+
+- Full-screen canvas displaying a user-controllable 3D model.
+- Model is rendered with [ThreeJS](https://github.com/pmndrs/react-three-fiber) and [Drei](https://github.com/pmndrs/drei).
+- Animated with [Framer Motion](https://www.framer.com/motion/).
+- Sections for about me, experience, portfolio, and a functioning contact form.
+- Contact form fields validation using RegEx and React useState hook.
+- Contact Form is utilizing [EmailJS](https://www.emailjs.com/) to send emails.
+
+## Development
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
 
 In the project directory, you can run:
 
