@@ -16,7 +16,8 @@
   flex-direction: column;
   bottom: 0;
   right: 0;
-  padding-right: 1rem;
+  margin: 0.5rem;
+  padding-left: 0.5rem;
   border-radius: 1rem;
 }
 

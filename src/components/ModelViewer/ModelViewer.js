@@ -52,16 +52,11 @@ export default function ModelViewer() {
           autoRotate={autoRotate}
         />
       </Suspense>
-      <div
-        className="controls"
-        style={{
-          backgroundColor: !showControlls && "transparent",
-        }}
-      >
+      <div className="controls">
         {showControlls && (
           <FormControlLabel
             label="Red"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -76,7 +71,7 @@ export default function ModelViewer() {
         {showControlls && (
           <FormControlLabel
             label="Blue"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -90,7 +85,7 @@ export default function ModelViewer() {
         {showControlls && (
           <FormControlLabel
             label="Green"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -104,7 +99,7 @@ export default function ModelViewer() {
         {showControlls && (
           <FormControlLabel
             label="Yellow"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -118,7 +113,7 @@ export default function ModelViewer() {
         {showControlls && (
           <FormControlLabel
             label="White"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -133,7 +128,7 @@ export default function ModelViewer() {
         {showControlls && (
           <FormControlLabel
             label="Rotate"
-            labelPlacement="start"
+            labelPlacement="end"
             control={
               <Switch
                 color="primary"
@@ -146,7 +141,7 @@ export default function ModelViewer() {
 
         <FormControlLabel
           label="Controls"
-          labelPlacement="start"
+          labelPlacement="end"
           control={
             <Switch
               color="primary"
