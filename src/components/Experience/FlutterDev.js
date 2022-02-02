@@ -9,25 +9,23 @@ function FlutterDev() {
   });
 
   return (
-    <section id="skill">
-      <div className="container">
-        {/* Description Grid*/}
-        <div className="description">
-          {/* Description Header */}
-          <h2>{flutterSkill.title}</h2>
+    <div className="container">
+      {/* Description Grid*/}
+      <div className="description">
+        {/* Description Header */}
+        <h3>{flutterSkill.title}</h3>
 
-          {/* Skills list */}
-          <ul key={flutterSkill.id}>
-            {flutterSkill.items.map((item) => {
-              return <li key={item.id}>{item.label}</li>;
-            })}
-          </ul>
-        </div>
-
-        {/* Illustration Grid */}
-        <img src={flutterDev} alt="Flutter development" />
+        {/* Skills list */}
+        <ul key={flutterSkill.id}>
+          {flutterSkill.items.map((item) => {
+            return <li key={item.id}>{item.label}</li>;
+          })}
+        </ul>
       </div>
-    </section>
+
+      {/* Illustration Grid */}
+      <img src={flutterDev} alt="Flutter development" />
+    </div>
   );
 }
 

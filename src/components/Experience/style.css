@@ -1,4 +1,4 @@
-#skill .container {
+#experience .container {
   display: grid;
   grid-template-columns: repeat(2, minmax(25rem, 30rem));
   justify-content: space-evenly;
@@ -6,11 +6,17 @@
   gap: 1rem;
 }
 
+#experience .container h1 {
+  display: flex;
+  margin-bottom: 3rem;
+  grid-column: span 2;
+}
+
 .description li {
   line-height: 2rem;
 }
 
-#skill .container img {
+#experience .container img {
   display: flex;
   overflow: auto;
   justify-content: center;
@@ -27,7 +33,7 @@
     text-align: center;
   }
 
-  #skill .container {
+  #experience .container {
     display: grid;
     grid-template-columns: repeat(1, minmax(auto, auto));
     /* justify-content: space-evenly; */
@@ -35,10 +41,16 @@
     gap: 1rem;
   }
 
-  #skill .container img {
+  #experience .container h1 {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #experience .container img {
     order: -1;
     width: 70%;
     margin-inline: auto;
+    padding-top: 2rem;
   }
 
   .description ul {

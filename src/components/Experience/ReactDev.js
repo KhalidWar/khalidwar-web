@@ -9,25 +9,23 @@ function ReactDev() {
   });
 
   return (
-    <section id="skill">
-      <div className="container">
-        {/* Description Grid*/}
-        <div className="description">
-          {/* Description Header */}
-          <h2>{reactSkill.title}</h2>
+    <div className="container">
+      {/* Description Grid*/}
+      <div className="description">
+        {/* Description Header */}
+        <h3>{reactSkill.title}</h3>
 
-          {/* Skills list */}
-          <ul key={reactSkill.id}>
-            {reactSkill.items.map((item) => {
-              return <li key={item.id}>{item.label}</li>;
-            })}
-          </ul>
-        </div>
-
-        {/* Illustration Grid */}
-        <img src={reactDev} alt="React development" />
+        {/* Skills list */}
+        <ul key={reactSkill.id}>
+          {reactSkill.items.map((item) => {
+            return <li key={item.id}>{item.label}</li>;
+          })}
+        </ul>
       </div>
-    </section>
+
+      {/* Illustration Grid */}
+      <img src={reactDev} alt="React development" />
+    </div>
   );
 }
 
