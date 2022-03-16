@@ -3,7 +3,7 @@
 }
 
 #about .container {
-  height: 85vh;
+  height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, minmax(30rem, 25rem));
   justify-content: space-evenly;

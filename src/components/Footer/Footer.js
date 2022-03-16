@@ -11,13 +11,13 @@ function Footer() {
       <div className="container">
         <p>Copyright © {currentYear} Khalid Warsame</p>
 
-        <p
+        {/* <p
           onClick={() => {
             window.open(cube, "blank");
           }}
         >
           "Cube Cascade" by Tycho Magnetic Anomaly
-        </p>
+        </p> */}
       </div>
     </section>
   );

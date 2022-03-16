@@ -8,10 +8,10 @@ function NavBar() {
   /// Sets initial navbar menu state for phones
   const initialNavbarState = !(window.innerWidth < 600);
   const [showMenu, setShowMenu] = useState(initialNavbarState);
-  const [navbarColor, setNavbarColor] = useState({
-    backgroundColor: "transparent",
-    textColor: "white",
-  });
+  // const [navbarColor, setNavbarColor] = useState({
+  //   backgroundColor: "transparent",
+  //   textColor: "white",
+  // });
 
   const menuAnimation = {
     hidden: { y: -50, opacity: 0 },
@@ -33,33 +33,35 @@ function NavBar() {
     },
   };
 
+  /// Handles screen resize
   function handleResize() {
     window.innerWidth > 600 ? setShowMenu(true) : setShowMenu(false);
   }
 
+  /// Handles screen scroll
   function handleScroll() {
     const scrollLocation =
       document.body.scrollTop || document.documentElement.scrollTop;
-    scrollLocation < 100
-      ? setNavbarColor({
-          backgroundColor: "transparent",
-          textColor: "white",
-        })
-      : setNavbarColor({
-          backgroundColor: "whitesmoke",
-          textColor: "black",
-        });
+    // scrollLocation < 100
+    //   ? setNavbarColor({
+    //       backgroundColor: "transparent",
+    //       textColor: "white",
+    //     })
+    //   : setNavbarColor({
+    //       backgroundColor: "whitesmoke",
+    //       textColor: "black",
+    //     });
   }
 
   function hamburgerOnPress() {
     setShowMenu(!showMenu);
-    const scrollLocation =
-      document.body.scrollTop || document.documentElement.scrollTop;
-    scrollLocation < 100 &&
-      setNavbarColor({
-        backgroundColor: !showMenu ? "whitesmoke" : "transparent",
-        textColor: !showMenu ? "black" : "white",
-      });
+    // const scrollLocation =
+      // document.body.scrollTop || document.documentElement.scrollTop;
+    // scrollLocation < 100 &&
+    //   setNavbarColor({
+    //     backgroundColor: !showMenu ? "whitesmoke" : "transparent",
+    //     textColor: !showMenu ? "black" : "white",
+    //   });
   }
 
   function scrollTo(selectorId) {
@@ -79,29 +81,19 @@ function NavBar() {
   }, []);
 
   return (
-    <div
-      className="navbar-container"
-      style={{
-        backgroundColor: navbarColor.backgroundColor,
-        color: navbarColor.textColor,
-      }}
-    >
+    <div className="navbar-container">
       <nav className="navbar">
         {/* Logo */}
         <div
           className="navbar-logo"
           onClick={() => {
-            scrollTo("#model");
+            scrollTo("#about");
           }}
         >
           KhalidWar
         </div>
 
-        <HamburgerButton
-          layerColor={navbarColor.textColor}
-          showMenu={showMenu}
-          onClick={hamburgerOnPress}
-        />
+        <HamburgerButton showMenu={showMenu} onClick={hamburgerOnPress} />
 
         <AnimatePresence>
           {/* Actions */}
@@ -111,7 +103,7 @@ function NavBar() {
               initial="hidden"
               animate="visible"
             >
-              <motion.li
+              {/* <motion.li
                 key={1}
                 variants={menuItemAnimation}
                 onClick={() => {
@@ -119,7 +111,7 @@ function NavBar() {
                 }}
               >
                 About
-              </motion.li>
+              </motion.li> */}
               <motion.li
                 key={2}
                 variants={menuItemAnimation}
