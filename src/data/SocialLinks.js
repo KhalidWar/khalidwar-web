@@ -1,4 +1,4 @@
-const twitterLink = "https://twitter.com/RealKhalidWar";
+const twitterLink = "https://twitter.com/KhalidWarsa";
 const linkedInLink = "https://www.linkedin.com/in/khalidwar/";
 const githubLink = "https://github.com/KhalidWar";
 const telegramLink = "https://t.me/khalidwar";
