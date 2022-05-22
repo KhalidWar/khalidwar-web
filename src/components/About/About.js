@@ -3,7 +3,7 @@ import { twitterLink, linkedInLink, githubLink } from "../../data/SocialLinks";
 import { LinkedInIcon, GithubIcon, TwitterIcon } from "./components/SocialIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
-import ProfilePic from "../../assets/profile-pic.jpg";
+import ProfilePic from "../../assets/profile-pic.png";
 
 import "./About.css";
 
@@ -50,7 +50,7 @@ function About() {
           <h1>Khalid Warsame</h1>
           <div className="subheader">
             <h3>Software developer.</h3>
-            <p>I build mobile apps and websites.</p>
+            <p>I build high quality mobile apps with Flutter.</p>
           </div>
 
           {/* Social Icons */}
@@ -138,7 +138,6 @@ function About() {
             </AnimatePresence>
           </div>
         </div>
-
         {/* Profile Picture */}
         <img src={ProfilePic} alt="profile-pic" />
       </div>
