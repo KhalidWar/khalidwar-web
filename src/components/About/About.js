@@ -3,7 +3,7 @@ import { twitterLink, linkedInLink, githubLink } from "../../data/SocialLinks";
 import { LinkedInIcon, GithubIcon, TwitterIcon } from "./components/SocialIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
-import ProfilePic from "../../assets/profile-pic.png";
+import ProfilePic from "../../assets/profile-pic.jpeg";
 
 import "./About.css";
 
