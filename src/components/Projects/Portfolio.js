@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
-import flutterDev from "../../assets/flutter-dev2.png";
-import reactDev from "../../assets/react-dev2.png";
+import flutterDev from "../../assets/flutter-dev.png";
+import reactDev from "../../assets/react-dev.png";
 
 import "./Portfolio.css";
 

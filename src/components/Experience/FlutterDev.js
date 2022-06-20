@@ -1,5 +1,5 @@
 import React from "react";
-import flutterDev from "../../assets/flutter-dev2.png";
+import flutterDev from "../../assets/flutter-dev.png";
 import skillsData from "../../data/skillsData";
 import "./style.css";
 

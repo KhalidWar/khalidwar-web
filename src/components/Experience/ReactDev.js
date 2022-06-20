@@ -1,5 +1,5 @@
 import React from "react";
-import reactDev from "../../assets/react-dev2.png";
+import reactDev from "../../assets/react-dev.png";
 import skillsData from "../../data/skillsData";
 import "./style.css";
 
