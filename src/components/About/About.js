@@ -1,9 +1,21 @@
 import React, { useState } from "react";
-import { twitterLink, linkedInLink, githubLink } from "../../data/SocialLinks";
-import { LinkedInIcon, GithubIcon, TwitterIcon } from "./components/SocialIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
 import ProfilePic from "../../assets/profile-pic.jpeg";
+import {
+  twitterLink,
+  linkedInLink,
+  githubLink,
+  instagramLink,
+  tiktokLink,
+} from "../../data/SocialLinks";
+import {
+  LinkedInIcon,
+  GithubIcon,
+  TwitterIcon,
+  InstagramIcon,
+  TikTokIcon,
+} from "./components/SocialIcon";
 
 import "./About.css";
 
@@ -77,6 +89,22 @@ function About() {
               className="social-icons"
               onClick={() => {
                 openUrl(githubLink);
+              }}
+            />
+            <InstagramIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icons"
+              onClick={() => {
+                openUrl(instagramLink);
+              }}
+            />
+            <TikTokIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icons"
+              onClick={() => {
+                openUrl(tiktokLink);
               }}
             />
           </div>
