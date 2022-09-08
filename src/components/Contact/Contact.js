@@ -1,6 +1,16 @@
 import React, { useState } from "react";
-import { LinkedInIcon, TwitterIcon } from "../About/components/SocialIcon";
-import { linkedInLink, twitterLink } from "../../data/SocialLinks";
+import {
+  LinkedInIcon,
+  TwitterIcon,
+  InstagramIcon,
+  TikTokIcon,
+} from "../About/components/SocialIcon";
+import {
+  linkedInLink,
+  twitterLink,
+  instagramLink,
+  tiktokLink,
+} from "../../data/SocialLinks";
 import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import emailjs from "@emailjs/browser";
@@ -89,6 +99,22 @@ function Contact() {
               className="social-icon"
               onClick={() => {
                 window.open(twitterLink, "_blank");
+              }}
+            />
+            <InstagramIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icon"
+              onClick={() => {
+                window.open(instagramLink, "_blank");
+              }}
+            />
+            <TikTokIcon
+              whileHover={{ scale: 1.3 }}
+              whileTap={{ scale: 0.8 }}
+              className="social-icon"
+              onClick={() => {
+                window.open(tiktokLink, "_blank");
               }}
             />
           </div>

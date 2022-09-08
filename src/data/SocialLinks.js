@@ -6,12 +6,14 @@ const tiktokLink = "https://www.tiktok.com/@khalidwarsa";
 const telegramLink = "https://t.me/khalidwar";
 const email = "mailto:contact@khalidwar.com";
 
-export {
-  twitterLink,
+const socialLinks = [
   linkedInLink,
+  twitterLink,
   githubLink,
   instagramLink,
   tiktokLink,
-  telegramLink,
-  email,
-};
+];
+
+export default socialLinks;
+
+export { twitterLink, linkedInLink, instagramLink, tiktokLink };

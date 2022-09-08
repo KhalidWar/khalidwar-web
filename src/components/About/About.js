@@ -2,20 +2,9 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
 import ProfilePic from "../../assets/profile-pic.jpeg";
-import {
-  twitterLink,
-  linkedInLink,
-  githubLink,
-  instagramLink,
-  tiktokLink,
-} from "../../data/SocialLinks";
-import {
-  LinkedInIcon,
-  GithubIcon,
-  TwitterIcon,
-  InstagramIcon,
-  TikTokIcon,
-} from "./components/SocialIcon";
+import socialLinks from "../../data/SocialLinks";
+
+import socialIconsList from "./components/SocialIcon";
 
 import "./About.css";
 
@@ -50,10 +39,6 @@ function About() {
     },
   };
 
-  function openUrl(url) {
-    window.open(url, "_blank");
-  }
-
   return (
     <section id="about">
       <div className="container">
@@ -62,62 +47,12 @@ function About() {
           <h1>Khalid Warsame</h1>
           <div className="subheader">
             <h3>Software developer.</h3>
-            <p>I build high quality mobile apps with Flutter.</p>
+            <p>I build high quality mobile apps.</p>
           </div>
 
           {/* Social Icons */}
-          <div className="social-icons-container">
-            <LinkedInIcon
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.8 }}
-              className="social-icons"
-              onClick={() => {
-                openUrl(linkedInLink);
-              }}
-            />
-            <TwitterIcon
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.8 }}
-              className="social-icons"
-              onClick={() => {
-                openUrl(twitterLink);
-              }}
-            />
-            <GithubIcon
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.8 }}
-              className="social-icons"
-              onClick={() => {
-                openUrl(githubLink);
-              }}
-            />
-            <InstagramIcon
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.8 }}
-              className="social-icons"
-              onClick={() => {
-                openUrl(instagramLink);
-              }}
-            />
-            <TikTokIcon
-              whileHover={{ scale: 1.3 }}
-              whileTap={{ scale: 0.8 }}
-              className="social-icons"
-              onClick={() => {
-                openUrl(tiktokLink);
-              }}
-            />
-          </div>
-
-          {/* Tech used */}
-          <motion.div
-            className="tech-logo-container"
-            variants={brandAnimation}
-            initial="hidden"
-            animate="visible"
-          >
-            <h3>Experienced in</h3>
-            {techBrandLogo.map((brand, index) => {
+          <motion.div className="social-icons-container">
+            {socialIconsList.map((icon, index) => {
               return (
                 <motion.svg
                   key={index}
@@ -128,11 +63,36 @@ function About() {
                   whileHover="hover"
                   whileTap="tap"
                   className="tech-logo"
+                  role={icon.role}
+                  viewBox={icon.viewBox}
+                  xmlns={icon.xmlns}
+                  onClick={() => {
+                    window.open(socialLinks[index], "noreferrer noopener");
+                  }}
+                >
+                  <path d={icon.path} />
+                </motion.svg>
+              );
+            })}
+          </motion.div>
+
+          {/* Tech used */}
+          <div className="tech-logo-container">
+            <h3>Experienced in</h3>
+            {techBrandLogo.map((brand, index) => {
+              return (
+                <motion.svg
+                  key={index}
+                  custom={index}
+                  variants={brandItemAnimation}
+                  whileHover="hover"
+                  whileTap="tap"
+                  className="tech-logo"
                   role={brand.role}
                   viewBox={brand.viewBox}
                   xmlns={brand.xmlns}
                   onClick={() => {
-                    openUrl(brand.link);
+                    window.open(brand.link, "noreferrer noopener");
                   }}
                   onHoverStart={() => {
                     setTip(brand.intro);
@@ -145,7 +105,7 @@ function About() {
                 </motion.svg>
               );
             })}
-          </motion.div>
+          </div>
 
           {/* Tip */}
           <div>
