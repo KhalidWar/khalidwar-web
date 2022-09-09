@@ -126,12 +126,12 @@ function About() {
           </AnimatePresence>
         </div>
       </div>
-      
+
       {/* Profile Picture */}
       <picture className="profile-pic">
         <source src={profilePicWebp} type="image/webp" />
         <source src={ProfilePic} type="image/jpg" />
-        <img src={ProfilePic} alt="profile-pic" />
+        <img src={ProfilePic} width="394" height="394" alt="profile-pic" />
       </picture>
     </section>
   );
