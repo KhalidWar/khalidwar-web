@@ -1,11 +1,8 @@
 #about {
   background-color: whitesmoke;
-}
-
-#about .container {
-  height: 90vh;
+  height: 100vh;
   display: grid;
-  grid-template-columns: repeat(2, minmax(30rem, 25rem));
+  grid-template-columns: repeat(2, minmax(auto, auto));
   justify-content: space-evenly;
   align-items: center;
 }
@@ -13,9 +10,17 @@
 .intro-grid {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+}
+
+.profile-pic {
+  display: flex;
+  margin-inline: auto;
 }
 
 .intro-grid h1 {
+  padding: 0;
+  margin-top: 0;
   font-size: 2rem;
 }
 
@@ -25,7 +30,7 @@ p {
   margin: 0;
 }
 
-#about img {
+#about picture img {
   border: 1px solid;
   border-radius: 50%;
 }
@@ -45,12 +50,13 @@ p {
 }
 
 .tech-logo-container h3 {
-  padding-top: 0;
-  margin-top: 0;
+  padding: 0;
+  margin: 0.5rem;
 }
 
 .tech-logo {
   cursor: pointer;
+  margin: 0;
   margin-right: 1rem;
   width: max(1rem, 2rem);
   padding: 0;
@@ -64,23 +70,27 @@ p {
   padding: 5px;
 }
 
-@media (max-width: 50rem) {
-  #about .container {
-    /* height: 90vh; */
+@media (max-width: 55rem) {
+  #about {
+    height: 95vh;
     display: grid;
-    /* grid-template-columns: 90vh;
-    grid-template-rows: repeat(2, minmax(auto, auto)); */
-    grid-template-columns: repeat(1, minmax(auto, auto));
+    grid-template-columns: auto;
+    justify-content: space-around;
   }
 
-  #about img {
+  .profile-pic {
     order: -1;
-    width: 60%;
+    display: flex;
+    margin-inline: auto;
+  }
+
+  .profile-pic img {
+    width: 50%;
+    height: 50%;
     margin-inline: auto;
   }
 
   .intro-grid {
-    /* height: 100%; */
     display: flex;
     align-items: center;
   }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import techBrandLogo from "../../data/TechBrandLogo";
+import profilePicWebp from "../../assets/profile-pic.webp";
 import ProfilePic from "../../assets/profile-pic.jpeg";
 import socialLinks from "../../data/SocialLinks";
 
@@ -41,94 +42,97 @@ function About() {
 
   return (
     <section id="about">
-      <div className="container">
-        {/* Intro */}
-        <div className="intro-grid">
-          <h1>Khalid Warsame</h1>
-          <div className="subheader">
-            <h3>Software developer.</h3>
-            <p>I build high quality mobile apps.</p>
-          </div>
-
-          {/* Social Icons */}
-          <motion.div className="social-icons-container">
-            {socialIconsList.map((icon, index) => {
-              return (
-                <motion.svg
-                  key={index}
-                  custom={index}
-                  variants={brandItemAnimation}
-                  initial="hidden"
-                  animate="visible"
-                  whileHover="hover"
-                  whileTap="tap"
-                  className="tech-logo"
-                  role={icon.role}
-                  viewBox={icon.viewBox}
-                  xmlns={icon.xmlns}
-                  onClick={() => {
-                    window.open(socialLinks[index], "noreferrer noopener");
-                  }}
-                >
-                  <path d={icon.path} />
-                </motion.svg>
-              );
-            })}
-          </motion.div>
-
-          {/* Tech used */}
-          <div className="tech-logo-container">
-            <h3>Experienced in</h3>
-            {techBrandLogo.map((brand, index) => {
-              return (
-                <motion.svg
-                  key={index}
-                  custom={index}
-                  variants={brandItemAnimation}
-                  whileHover="hover"
-                  whileTap="tap"
-                  className="tech-logo"
-                  role={brand.role}
-                  viewBox={brand.viewBox}
-                  xmlns={brand.xmlns}
-                  onClick={() => {
-                    window.open(brand.link, "noreferrer noopener");
-                  }}
-                  onHoverStart={() => {
-                    setTip(brand.intro);
-                  }}
-                  onHoverEnd={() => {
-                    setTip("");
-                  }}
-                >
-                  <path d={brand.path} />
-                </motion.svg>
-              );
-            })}
-          </div>
-
-          {/* Tip */}
-          <div>
-            <AnimatePresence>
-              {tip && (
-                <motion.p
-                  className="tip"
-                  initial={{
-                    x: "5vh",
-                  }}
-                  animate={{
-                    x: "0",
-                  }}
-                >
-                  {tip}
-                </motion.p>
-              )}
-            </AnimatePresence>
-          </div>
+      {/* Intro */}
+      <div className="intro-grid">
+        <h1>Khalid Warsame</h1>
+        <div className="subheader">
+          <h3>Software developer.</h3>
+          <p>I build high quality mobile apps.</p>
         </div>
-        {/* Profile Picture */}
-        <img src={ProfilePic} alt="profile-pic" />
+
+        {/* Social Icons */}
+        <motion.div className="social-icons-container">
+          {socialIconsList.map((icon, index) => {
+            return (
+              <motion.svg
+                key={index}
+                custom={index}
+                variants={brandItemAnimation}
+                initial="hidden"
+                animate="visible"
+                whileHover="hover"
+                whileTap="tap"
+                className="tech-logo"
+                role={icon.role}
+                viewBox={icon.viewBox}
+                xmlns={icon.xmlns}
+                onClick={() => {
+                  window.open(socialLinks[index], "noreferrer noopener");
+                }}
+              >
+                <path d={icon.path} />
+              </motion.svg>
+            );
+          })}
+        </motion.div>
+
+        {/* Tech used */}
+        <div className="tech-logo-container">
+          <h3>Experienced in</h3>
+          {techBrandLogo.map((brand, index) => {
+            return (
+              <motion.svg
+                key={index}
+                custom={index}
+                variants={brandItemAnimation}
+                whileHover="hover"
+                whileTap="tap"
+                className="tech-logo"
+                role={brand.role}
+                viewBox={brand.viewBox}
+                xmlns={brand.xmlns}
+                onClick={() => {
+                  window.open(brand.link, "noreferrer noopener");
+                }}
+                onHoverStart={() => {
+                  setTip(brand.intro);
+                }}
+                onHoverEnd={() => {
+                  setTip("");
+                }}
+              >
+                <path d={brand.path} />
+              </motion.svg>
+            );
+          })}
+        </div>
+
+        {/* Tip */}
+        <div>
+          <AnimatePresence>
+            {tip && (
+              <motion.p
+                className="tip"
+                initial={{
+                  x: "5vh",
+                }}
+                animate={{
+                  x: "0",
+                }}
+              >
+                {tip}
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </div>
       </div>
+
+      {/* Profile Picture */}
+      <picture className="profile-pic">
+        <source src={profilePicWebp} type="image/webp" />
+        <source src={ProfilePic} type="image/jpg" />
+        <img src={ProfilePic} width="394" height="394" alt="profile-pic" />
+      </picture>
     </section>
   );
 }
